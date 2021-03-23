@@ -29,10 +29,11 @@ h1,h2,h3,h4,h5,ul,li,input,span,a{
 .gutter-bot-sm{margin-bottom:15px;}
 a{text-decoration: none; transition: all linear 0.2s;}
 
-*[class*=heading-]{
+*[class*=heading-],*[class*=title-]{
     font-family: var(--rale);
-    font-weight: 700;
+    font-weight: 500;
 }
+*[class*=wt-]{color:var(--white);}
 .heading-lg{font-size:42px; color:var(--primary-color);}
 .heading-md{font-size:24px;}
 .text-white{color:var(--white);}
@@ -151,6 +152,7 @@ header::before{
     z-index:-1;
 }
 
+/* ==========about section ============  */
 
 .about-section{
     background:url('../images/bg-wave.png');
@@ -192,16 +194,46 @@ header::before{
     margin-left:-80px;
 }
 
+/* ==========services section ============  */
 
 .service-container{
     max-width:1000px;
     margin:auto;
+    margin-top:-90px;
+    
 }
 .service-card{
     background:var(--light-dark);
     border-radius: 10px;
     border:2px solid var(--primary-color);
-    padding:20px;
+    padding:40px;
+    margin-bottom:15px;
+}
+.icon svg{
+    max-height:50px;
+    width:60px;
+}
+.service-title b{
+    font-size: 24px;
+    color:var(--white);
+    font-family:var(--rale);
+    margin-left:10px;
+    letter-spacing: 1px;
+}
+
+/* ==========project section ============  */
+.project{
+    margin-top:30px;
+}
+.project .img-container{
+    border-radius:10px;
+    height:350px;
+    border:1px solid var(--primary-color);
+}
+.project .title-project{
+    color:var(--white);
+    margin-top:10px;
+    font-size:24px;
 }
 /* ==========responsive section ============  */
 @media only screen and (max-width:1199px){
