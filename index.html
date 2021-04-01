@@ -16,6 +16,15 @@
     <script src="js/popper.min.js"></script>
     <title>Document</title>
 </head>
+<script>
+    function showMenu() {
+      $('#mobile-side').css('left', '0');
+      console.log('clicked')
+    }
+    function hideMenu() {
+      $('#mobile-side').css('left', '-300px');
+    }
+  </script>
 <body>
     <header>
         <div class="container">
@@ -23,7 +32,8 @@
                 <div class="logo text-white">
                     <b>D</b><span>coster</span>
                 </div>
-                <ul class="nav custom-nav">
+                <ul class="nav custom-nav"  id="mobile-side">
+                    <li class="close-btn"><a href="javascript:;" onclick="hideMenu()">&times</a></li>
                     <li class="active"><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Services</a></li>
@@ -37,6 +47,7 @@
                         <li><a href=""><i class="fa fa-instagram"></i></a></li>
                         <li><a href=""><i class="fa fa-linkedin"></i></a></li>
                         <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:;" onclick="showMenu()" class="mobile-btn"><i class="fa fa-bars theme-color"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -72,13 +83,13 @@
             </div>
         </div>
     </div>
-    <section class="about-section pad-bot">
+    <section class="about-section pad-bot ">
         <div class="container">
             <object data="./images/dots.svg" ></object>
             <div class="row">
-                <div class="col-md-6 col-lg-5 relative">
+                <div class="col-md-12 col-lg-5 relative about-img">
                     <div class="img-container">
-                        <img src="./images/sabin-removebg-preview.png" alt="" class="img-fitted">
+                        <img src="./images/sabin-removebg-preview.png" alt="" >
                     </div>
                     <div class="circle-wrap">
                         <div class="circle-wrap-list">
@@ -92,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 offset-lg-1 pad-top-2">
+                <div class="col-lg-6 offset-lg-1 pad-top-2 ord-1">
                     <h4 class="sub-head">Let me introduce myself</h4>
                     <h2 class="heading-lg">About Me</h2>
                     <p>It all started with a hello world in Qbasic and the story continues. 
@@ -143,34 +154,34 @@
             <h4 class="sub-head">Some of my work</h4>
             <h2 class="heading-lg">Projects</h2>
             <div class="row project-container">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="project">
                         <div class="img-container">
-                            <img src="./images/project1.png" alt="" class="img-fitted">
+                            <a href=""><img src="./images/project1.png" alt="" class="img-fitted"></a>
                         </div>
                         <h3 class="title-project">Apricot</h3>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="project">
                         <div class="img-container">
-                            <img src="" alt="" class="img-fitted">
+                           <a href=""><img src="./images/project1.png" alt="" class="img-fitted"></a>
                         </div>
                         <h3 class="title-project">Project title</h3>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="project">
                         <div class="img-container">
-                            <img src="" alt="" class="img-fitted">
+                            <a href=""><img src="./images/project1.png" alt="" class="img-fitted"></a>
                         </div>
                         <h3 class="title-project">Project title</h3>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="project">
                         <div class="img-container">
-                            <img src="" alt="" class="img-fitted">
+                            <a href=""><img src="./images/project1.png" alt="" class="img-fitted"></a>
                         </div>
                         <h3 class="title-project">Project title</h3>
                     </div>
@@ -186,21 +197,21 @@
             <div class="sub-head">Achievement</div>
             <div class="row">
                 <!-- <small>Achievement</small> -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="certificate">
                         <div class="img-container">
                             <img src="./images/a1.png" alt="" class="img-fitted">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="certificate">
                         <div class="img-container">
                             <img src="./images/a1.png" alt="" class="img-fitted">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="certificate">
                         <div class="img-container">
                             <img src="./images/kaggle.png" alt="" class="img-fitted">
@@ -233,7 +244,7 @@
     <section class="blog pad-top pad-bot">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="blog-wrap">
                         <div class="img-container">
                             <img src="./images/project1.png" alt="" class="img-fitted">
@@ -253,7 +264,7 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-md-4 ord-1">
+                <div class="col-md-6 col-lg-4 ord-1">
                     <div class="text-center">
                         <h4 class="sub-head">Article</h4>
                         <h2 class="heading-lg">From The Blogs</h2>
@@ -277,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="blog-wrap">
                         <div class="img-container">
                             <img src="./images/project1.png" alt="" class="img-fitted">
@@ -317,17 +328,17 @@
                 </div>
                 <div class="info-section flexer">
                     <i class="fa fa-map-marker"></i>
-                    <b class="wt-">Balaju, Kathmandu</b>
+                    <p class="wt-">Balaju, Kathmandu</p>
                 </div>
             </div>
             <div class="bottom-form pad-top-2 pad-bot">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-12">
                         <h2 class="heading-lg">
-                            LETS'WORK <span>TOGETHER</span>
+                            LETS'WORK <span class="wt-">TOGETHER</span>
                         </h2>
                     </div>
-                    <div class="col-md-9 f-txt">
+                    <div class="col-lg-9 f-txt">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor optio enim eligendi nemo minima!</p>
                         <form>
                             <div class="form-row footer-form">
