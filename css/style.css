@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,ul,li,input,span,a{
 .gutter-bot-md{margin-bottom:30px;}
 .gutter-bot-sm{margin-bottom:15px;}
 a{text-decoration: none; transition: all linear 0.2s;}
-
+button{outline:none;border:none;}
 *[class*=heading-],*[class*=title-]{
     font-family: var(--rale);
     font-weight: 500;
@@ -40,7 +40,7 @@ a{text-decoration: none; transition: all linear 0.2s;}
 p{
     font-family: var(--assitant);
     font-size:16px;
-    margin:20px 0;
+    margin:0 0 20px 0;
     line-height: 30px;
     color:var(--white);
 }
@@ -234,6 +234,115 @@ header::before{
     color:var(--white);
     margin-top:10px;
     font-size:24px;
+}
+/* ==========achievement and skills section ============  */
+.achievement{
+    background:var(--light-dark);
+}
+.certificate{
+    margin-top:15px;
+}
+.certificate .img-container{
+    height:270px;
+    border:5px solid #fff;
+}
+.skill-wrap{
+    list-style: none;  
+    flex-wrap: wrap;
+}
+.skill-wrap li{
+    margin-right:40px;
+    margin-top: 15px;
+}
+.skill-wrap li img{
+    max-width: 50px;
+    height:50px;
+}
+
+/* ==========blog section ============  */
+.blog-wrap .img-container{
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    margin-top:30px;
+}
+.blog-date{
+    border:2px solid var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    background:var(--light-dark);
+    padding: 5px;
+    max-width: 60px;
+    position: absolute;
+    right:30px;
+    margin-top: -45px;
+}
+.writer{
+    margin:10px 0;
+    color:var(--primary-color);
+}
+.writer i{
+    font-size:14px;
+}
+.blog-title{
+    color:var(--white);
+    font-size:20px;
+}
+.blog-desc p{
+    margin-top:5px;
+}
+.blog-desc a{
+    color:var(--primary-color);
+    font-weight: 600;
+}
+/* ==========Footer section ============  */
+footer{
+    background-image: url('../images/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+.contact-wrap{
+    max-width: 900px;
+    margin:auto;
+    justify-content: space-around;
+    margin-top:60px;
+}
+.info-section{
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background:var(--light-dark);
+    height: 150px;
+    width: 220px;
+    /* padding:20px; */
+    border:2px solid var(--primary-color);
+    border-radius: 10px;
+}
+.info-section i{
+    color:var(--primary-color);
+    font-size:30px;
+    margin-bottom:10px;
+}
+.info-section a{
+    color:var(--white);
+    text-align: center;
+}
+.info-section:nth-child(2){
+    transform: scale(1.2,1.2);
+}
+.f-txt p{
+    margin:0;
+}
+.footer-form input{
+    height:53px;
+}
+.copyright{
+    padding:15px 0;
+    border-top:1px solid var(--white);
+}
+.copyright small span a{
+    color:var(--primary-color);
 }
 /* ==========responsive section ============  */
 @media only screen and (max-width:1199px){
